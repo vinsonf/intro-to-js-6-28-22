@@ -7,10 +7,15 @@
 
 
 
-yes = true; // boolean
-no = false;
-Yes = 10;
-console.log(yes, Yes);
+
+let yes = true; // boolean
+const no = false;
+yes = false; // reassignable
+
+no = true; // error
+var Yes = true; // case sensitive different than yes
+two = 'true'; // number
+console.log(yes, Yes, two, 3, 4,'3');
 
 count = 0; // number
 one = 1;
