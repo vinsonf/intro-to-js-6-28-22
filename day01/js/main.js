@@ -4,10 +4,6 @@
 */ // ends with */
 
 // variables
-
-
-
-
 let yes = true; // boolean
 const no = false;
 yes = false; // reassignable
