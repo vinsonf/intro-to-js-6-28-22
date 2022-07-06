@@ -68,4 +68,43 @@ const strings = {
     }
 }
 
-console.log(dataTypes.organizational, strings.methods)
+const popups = {
+    // alert: alert('hey there is an update'), // tell the user something
+    // confirm: confirm('are you sure?'), // ask the user a question and get a boolean answer
+    // prompt: prompt('prompt'),
+}
+
+const answer = popups.prompt;
+console.log(answer);
+
+
+const dates = {
+    now: new Date(),
+    days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+    months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    methods: {
+        getDate: new Date().getDate(),
+        getDay: new Date().getDay(),
+        getFullYear: new Date().getFullYear(),
+        getHours: new Date().getHours(),
+        getMilliseconds: new Date().getMilliseconds(),
+        getMinutes: new Date().getMinutes(),
+        getMonth: new Date().getMonth(),
+        getSeconds: new Date().getSeconds(),
+        getTime: new Date().getTime(),
+        getTimezoneOffset: new Date().getTimezoneOffset(),
+        getUTCDate: new Date().getUTCDate(),
+        getUTCDay: new Date().getUTCDay(),
+        getUTCFullYear: new Date().getUTCFullYear(),
+        getUTCHours: new Date().getUTCHours(),
+        getUTCMilliseconds: new Date().getUTCMilliseconds(),
+        getUTCMinutes: new Date().getUTCMinutes(),
+        getUTCMonth: new Date().getUTCMonth(),
+        getUTCSeconds: new Date().getUTCSeconds(),
+        getYear: new Date().getYear(),
+        setDate: new Date().setDate(1),
+        setFullYear: new Date().setFullYear(2020),
+        setHours: new Date().setHours(1),
+        setMilliseconds: new Date().setMilliseconds(1),
+    }
+};
