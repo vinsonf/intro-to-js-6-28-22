@@ -79,3 +79,7 @@ my score is ${score}. my favorite movie is ${favoriteMovie}
 
 my score is ${score}. my favorite movie is ${favoriteMovie}
 `);
+
+const users = [{
+    name: "Larry",
+}, { name: "Moe" }, { name: "Curly" }];
