@@ -108,3 +108,34 @@ const dates = {
         setMilliseconds: new Date().setMilliseconds(1),
     }
 };
+
+const math = {
+
+    methods: {
+        random: Math.random(),
+
+
+        abs: Math.abs(-1),
+        acos: Math.acos(1),
+        asin: Math.asin(1),
+        atan: Math.atan(1),
+        atan2: Math.atan2(1, 1),
+        ceil: Math.ceil(1),
+        cos: Math.cos(1),
+        exp: Math.exp(1),
+        floor: Math.floor(1),
+        log: Math.log(1),
+        max: Math.max(1, 2),
+        min: Math.min(1, 2),
+        pow: Math.pow(1, 2),
+        sin: Math.sin(1),
+        sqrt: Math.sqrt(1),
+        tan: Math.tan(1),
+        trunc: Math.trunc(1),
+        round: Math.round(1),
+     
+
+    }
+}
+
+console.log(math)
