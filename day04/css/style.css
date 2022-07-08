@@ -1,0 +1,9 @@
+button {
+    background-color: red;
+}
+
+.active {
+    background-color: blue;
+    color: yellow;
+    font-size: 40px;
+}
