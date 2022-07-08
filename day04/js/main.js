@@ -60,8 +60,8 @@ if ([]){
     console.log('array will trigger');
 }
 
-const firstName = prompt('first name');
-const lastName = prompt('last name');
+const firstName = 'joe';
+const lastName = 'smith';
 
 // if (firstName && lastName) {
 //     console.log('firstName and lastname is truthy');
@@ -78,3 +78,39 @@ alert('you must enter a first and last name');
 
 
 // comparison operators
+// == equal to
+// === equal value and equal type
+// != not equal to
+// !== not equal value or not equal type
+// < less than
+// > greater than
+// <= less than or equal to
+// >= greater than or equal to
+
+if (1 == 1) {
+    console.log('1 == 1');
+}
+
+if (10 > 5) {
+    console.log('10 > 5');
+}
+
+if (10 >= 10) {
+    console.log('10 >= 10');
+}
+
+if (10 == '10') {
+    console.log('10 == \'10\'');
+}
+
+if (5 === '5') {
+    console.log('5 === "5"');
+}
+
+if (10 != '10') {
+    console.log('10 != \'10\'');
+}
+
+if (5 !== '5') {
+    console.log('5 === "5"');
+}
