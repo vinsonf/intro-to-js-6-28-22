@@ -60,8 +60,21 @@ if ([]){
     console.log('array will trigger');
 }
 
-const firstName = 'joe';
-const lastName = 'smith';
+const firstName = prompt('first name');
+const lastName = prompt('last name');
+
+// if (firstName && lastName) {
+//     console.log('firstName and lastname is truthy');
+// }
+// if (firstName || lastName) {
+//     console.log('firstName or lastname is truthy');
+// }
+
+
+if (!firstName || !lastName || '') {
+alert('you must enter a first and last name');
+}
 
 
 
+// comparison operators
