@@ -50,9 +50,6 @@ newButton.addEventListener('click', function() {
         console.log('index: ', index);
     }
 
-
-
-
     newButton.classList.add('active');
     newButton.style.backgroundColor = 'green';
     newButton.style.color = 'white';
@@ -73,9 +70,29 @@ const object = {
 
 let index = 0;
 
-if (new Date().getHours() >= 19) {
+const today = new Date();
+today.setHours(18)
+
+if (today.getHours() < 12) {
+    document.body.style.backgroundColor = 'yellow';
+} else if (today.getHours() < 18) {
+    document.body.style.backgroundColor = 'blue';
+} else {
     console.log('good morning');
     document.body.style.backgroundColor = 'black';
 }
 
 console.log(new Date().getHours());
+
+
+let timesHovered = 0;
+const colors = ['red', 'green', 'blue'];
+
+newButton.addEventListener('mouseenter', function() {
+    newButton.style.backgroundColor = colors[timesHovered];
+    timesHovered += 1;
+    newButton.innerHTML = `<h1>${timesHovered}</h1>`;
+    if (timesHovered === colors.length) {
+        timesHovered = 0;
+    }
+})
