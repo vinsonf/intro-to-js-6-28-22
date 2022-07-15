@@ -30,3 +30,23 @@ getPokemon('pikachu');
 getPokemon('bulbasaur');
 getPokemon('charmander');
 getPokemon('squirtle');
+
+const password = prompt('Enter your password');
+let isValid = true;
+if (password.length < 5){
+    isValid = false;
+    alert('Password is invalid - it must be at least 6 characters long');
+}
+if (password.length > 20){
+    isValid = false;
+    alert('Password is invalid - it must be less than 21 characters long');
+}
+const validFirstCharacters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+if (!validFirstCharacters.includes(password[0].toLowerCase())){
+    isValid = false;
+    alert('Password is invalid - it must start with a letter');
+}
+
+if (isValid){
+    alert('Password is valid');
+}
