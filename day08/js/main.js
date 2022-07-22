@@ -136,7 +136,7 @@ class Smiley {
                       this.wink();
                   }
             }
-        }, 1000)
+        }, 3000)
     }
     wink(){
         this.winking = true;
