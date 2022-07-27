@@ -30,6 +30,8 @@
             container.innerHTML = html;
             document.body.append(container);
 
+            container.innerHTML = JSON.stringify(this);
+
           }
         }
         let car1 = new Car('Chevy', 'Volt', 2018, 'red');
