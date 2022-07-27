@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Car {
+          constructor(make, model, year, color){
+            console.log(make)
+            this.make = make;
+            this.model = model;
+            this.year = year;
+            this.color = color;
+          }  
+          createHtml() {
+            const html = `
+            <div style="color: ${this.color}">
+                <h3>${this.model}</h3>
+                <p>${this.make}</p>
+                <p>${this.year}</p>
+                <p>${this.color}</p>
+            </div>
+            
+            `;
+            const container = document.createElement("div");
+            container.innerHTML = html;
+            document.body.append(container);
+
+          }
+        }
+        let car1 = new Car('Chevy', 'Volt', 2018, 'red');
+        console.log(car1);
+        let car2 = new Car('Ford', 'Mustang', 2018, 'blue');
+        console.log(car2);
+        let car3 = new Car('Chevy', 'Corvette', 2019, 'red');
+        console.log(car3);
+        let car4 = new Car('Chevy', 'Camaro', 2019, 'orange');
+
+
+        car1.createHtml();
+        car2.createHtml();
+        car3.createHtml();
+        car4.createHtml();
+
+
+
+    </script>
+</body>
+</html>
