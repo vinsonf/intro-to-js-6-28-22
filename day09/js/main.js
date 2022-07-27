@@ -29,3 +29,8 @@ forms.profile.team.addEventListener('input', function(){
 forms.profile.id.addEventListener('input', function(){
     document.querySelector('#id').innerText = `the id for this user is ${this.value}`;
 });
+
+forms.profile.addEventListener('input', function(event){
+    event.preventDefault();
+    console.log(this.username.value);
+});
