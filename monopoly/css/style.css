@@ -1,0 +1,14 @@
+.square {
+    border: 1px solid #000;
+    float: left;
+    margin: 1px;
+    text-align: center;
+ 
+    font-weight: bold;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+}
